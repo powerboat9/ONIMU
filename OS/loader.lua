@@ -1,7 +1,7 @@
-os.loadAPI("lib/graphics")
+os.loadAPI("ONIMU/lib/graphics")
 
-local pre_init = fs.find("programs/*/os/startup/pre_init/*")
-local post_init = fs.find("programs/*/os/startup/post_init/*")
+local pre_init = fs.find("ONIMU/programs/*/os/startup/pre_init/*")
+local post_init = fs.find("ONIMU/programs/*/os/startup/post_init/*")
 
 --PRE_INIT
 
@@ -21,6 +21,9 @@ filePerms = {
             {
                 "*"
             },
+            {
+                "*"
+            }
         }
     },
     read = {
