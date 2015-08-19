@@ -1,1 +1,2 @@
+os.loadAPI("lib/graphics")
 
