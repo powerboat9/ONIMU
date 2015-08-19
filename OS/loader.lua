@@ -34,7 +34,8 @@ filePerms = {
                 "ONIMU/tmp/programs/%name%"
             },
             {
-                "
+                ""
+            }
         }
     },
     read = {
