@@ -1,14 +1,27 @@
 os.loadAPI("lib/graphics")
 
-local pre_int = fs.find("programs/*/os/startup/pre_int/*")
-local post_int = fs.find("programs/*/os/startup/post_int/*")
+local pre_init = fs.find("programs/*/os/startup/pre_init/*")
+local post_init = fs.find("programs/*/os/startup/post_init/*")
 
-for k, v in ipairs(pre_int) do
+--PRE_INIT
+
+for k, v in ipairs(pre_init) do
     shell.run(v)
 end
 
---TODO: Add OS init
+--OS init
 
-for k, v in ipairs(post_int) do
+local old = {}
+
+old.fs.isReadOnly = fs.isReadOnly
+fs.isReadOnly = function
+
+local sandbox = function(program)
+    --TODO: Add Sandboxing
+end
+
+--POST_INIT
+
+for k, v in ipairs(post_init) do
     shell.run(v)
 end
