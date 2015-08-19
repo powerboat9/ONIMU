@@ -13,7 +13,7 @@ end
 
 --User Types: Secure, Basic, All Basic, Advanced, OS, BIOS
 filePerms = {
-    read = {
+    edit = {
         blacklist = {
             {
                 "*"
@@ -23,7 +23,11 @@ filePerms = {
             },
         }
     },
-    write = {
+    read = {
+    },
+    execute = {
+    },
+    see = {
     }
 }
 
