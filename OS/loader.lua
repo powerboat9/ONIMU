@@ -1,3 +1,3 @@
 os.loadAPI("lib/graphics")
 
-fs.find("programs/*/os/startup/pre_int/*")
+local pre_int = fs.find("programs/*/os/startup/pre_int/*")
