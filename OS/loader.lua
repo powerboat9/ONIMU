@@ -24,6 +24,14 @@ filePerms = {
             {
                 "*"
             }
+        },
+        whitelist = {
+            {
+                ""
+            },
+            {
+                "ONIMU/data/programs/%name%"
+                
         }
     },
     read = {
