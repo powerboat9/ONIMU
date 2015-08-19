@@ -11,6 +11,22 @@ end
 
 --OS init
 
+--User Types: Secure, Basic, All Basic, Advanced, OS, BIOS
+filePerms = {
+    read = {
+        blacklist = {
+            {
+                "*"
+            },
+            {
+                "*"
+            },
+        }
+    },
+    write = {
+    }
+}
+
 local old = {}
 
 old.fs.isReadOnly = fs.isReadOnly
