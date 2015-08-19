@@ -14,7 +14,8 @@ end
 local old = {}
 
 old.fs.isReadOnly = fs.isReadOnly
-fs.isReadOnly = function
+fs.isReadOnly = function(...)
+    return old.fs.isReadOnly(...) or 
 
 local sandbox = function(program)
     --TODO: Add Sandboxing
